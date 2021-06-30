@@ -14,6 +14,10 @@ def test():
 def mapit():
     return render_template("leaflet-example.html")
 
+@app.route("/maptwo")
+def maptwo():
+    return render_template("newmap.html")
+
 if __name__=='__main__':
     app.run(debug = True)
 
